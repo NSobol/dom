@@ -1,6 +1,6 @@
 const cont = document.querySelector('.container');
 
-function getElement() {
+export function getElement() {
   const el = document.createElement('div');
   el.classList.add('item');
   return el;
@@ -12,9 +12,9 @@ for (let i = 0; i < 16; i += 1) {
 }
 
 const items = document.querySelectorAll('.item');
-const itemsArray = Array.from(items);
+export const itemsArray = Array.from(items);
 
-function getRandomInt(min, max) {
+export function getRandomInt(min, max) {
   const mini = Math.ceil(min);
   const maxi = Math.floor(max);
   return Math.floor(Math.random() * (maxi - mini)) + mini;
